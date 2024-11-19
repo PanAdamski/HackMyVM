@@ -1,3 +1,4 @@
+import struct  
 import socket
 import base64
 
@@ -10,20 +11,14 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     data = s.recv(1024)
     print(data)
 
-    s.send(b'levelx01')
+    s.send(b'levelx08')
 
     data2 = s.recv(1024)
     print(data2)
+    data3 = data2.decode()
+    num1, num2 = map(int, data3.split())
 
-    s.send(data2)
-    data3 = s.recv(1024)
-    print(data3)
-    
-    s.send(data3)
+    result = num1 + num2
+    s.send(str(result).encode())
     data4 = s.recv(1024)
     print(data4)
-
-
-    s.send(b'ImString1!')
-    data5 = s.recv(1024)
-    print(data5)
