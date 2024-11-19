@@ -1,0 +1,9 @@
+# EN
+Codename: levelx00
+Mission: On this mission you will receive an string and you should send the same string.
+The code to solve this level in Python can be found here.
+
+Example: 
+HMV(Input): HMVLOVESYOU
+
+Hacker(Output): HMVLOVESYOU
