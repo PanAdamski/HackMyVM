@@ -15,12 +15,11 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
     data2 = s.recv(1024)
     print(data2)
-    data3 = data2.decode()
-    for x in data3:
-       print(''.join(x))
+    data3 = data2.decode().strip()
+    numbers = data3.split()
 
-'''
-    s.send(ord(data3))
+    wynik = ''.join(chr(int(num)) for num in numbers)
+
+    s.send(wynik.encode())
     data4 = s.recv(1024)
     print(data4)
-'''

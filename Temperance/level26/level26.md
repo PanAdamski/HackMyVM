@@ -1,0 +1,12 @@
+# EN
+Codename: levelx26
+Mission: In this mission you will receive a png encoded in base64, you must decode it and send the number found in the image.
+
+Example: 
+HMV(Input): iVBORw0KGgoAAAANSUhEUgAAAJYAAAAyCAYAAAC+jCIaAAABL0lEQVR4nOzYQU6zQBiA4fbPfxWX3v8gL
+j1MTRcmhBQ6VN5azPNs1BkzkvAGv/LvBAFhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRA
+Wif97H3h5f7vcWj9/fJ7nvzNd27K3dN6WvZHr5MVNb+LS91v27q1/r63tjZ7Fi1qL5TQYwdYYHglLVPtKZ6zrzXr2v5ZHnki/c
+Z1/3e4zVunWjHX9Ol+fzmlLe7SysPZ+CszPm/689nfuXYOnVeMwrxvcfIbnnNFPhXsN4aOfNPm5p89Y8xloZO/WbLT0rmp+5to
+ecDCHmbE4FmGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWia8AAAD//6oWtSXo+kn1AAAAAElFTkSuQmCC
+
+Hacker(Output): 7006997
