@@ -1,4 +1,4 @@
-import struct  
+import struct
 import socket
 import base64
 
@@ -11,16 +11,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     data = s.recv(1024)
     print(data)
 
-    s.send(b'levelx15')
+    s.send(b'levelx22')
 
     data2 = s.recv(1024)
     print(data2)
+    data3 = data2.decode()
+    for x in data3:
+       print(''.join(x))
 
-    numbers = list(map(int, data2.split()))
-    roznica = numbers[-1] - numbers[-2]
-    nowa_liczba = numbers[-1] + roznica
-
-    data3 = str(nowa_liczba).encode()
-    s.send(data3)
+'''
+    s.send(ord(data3))
     data4 = s.recv(1024)
     print(data4)
+'''
